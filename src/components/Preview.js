@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
+import marked from 'marked';
 
 export default class Preview extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { // TODO: make it stateless?
-        };
+
+    componentWillReceiveProps() {
+        console.log("receiving props");
+        this.props.update();
+    }
+
+    componentDidMount() {
+        console.log("component mounted");
+        this.props.update();
     }
 
     render() {
+
         return (
             <div id="preview">
-                {this.props.input}
             </div>
         );
     }
