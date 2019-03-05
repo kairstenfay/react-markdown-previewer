@@ -8,7 +8,7 @@ export default class Editor extends Component {
         return (
             <div>
                 <textarea id="editor" value={this.props.input} onChange={this.props.handleChange}
-                          rows="4" cols="50" />
+                          rows="40" cols="50" />
             </div>
         );
     }

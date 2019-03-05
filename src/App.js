@@ -34,7 +34,6 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                 </header>
-
                 <Editor input={this.state.input} handleChange={this.handleChange} />
                 <Preview input={this.state.input} update={this.update} />
             </div>
