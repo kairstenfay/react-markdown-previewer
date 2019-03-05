@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Editor from './components/Editor';
 import Preview from './components/Preview';
+import Logo from './components/Logo';
 import marked from 'marked';
 import CONSTANTS from './constants'
 
@@ -36,6 +37,7 @@ class App extends Component {
                 </header>
                 <Editor input={this.state.input} handleChange={this.handleChange} />
                 <Preview input={this.state.input} update={this.update} />
+                <Logo />
             </div>
         );
     }

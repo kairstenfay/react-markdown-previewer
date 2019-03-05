@@ -14,16 +14,20 @@ img {
 #editor {
   background-color: #333;
   color: white;
-  font-size: 1.1em;
-  max-width: 100%;
+  font-size: 1em;
+  width: 40vw;
+  height: 90vh;
 }
 #preview {
   text-align: left;
   padding: 0 20px;
+  word-wrap: break-word;
+  width: 50vw;
 }
 
 code {
   font-family: "Courier New", sans-serif;
-  background-color: lightgray;
-  color: #333;
+  background-color: #eee;
+  color: #000;
+  font-weight: 800;
 }

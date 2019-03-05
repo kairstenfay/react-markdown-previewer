@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import * as quoteActions from '../actions/quote';
 // import Quote from './Quote';
 
-export default class Editor extends Component {
+const Editor = function(props) {
 
-    render() {
-        return (
-            <div>
-                <textarea id="editor" value={this.props.input} onChange={this.props.handleChange}
-                          rows="40" cols="50" />
-            </div>
-        );
-    }
+    return (
+        <div>
+            <textarea id="editor" value={props.input} onChange={props.handleChange} />
+        </div>
+    );
+};
 
-}
+export default Editor;
